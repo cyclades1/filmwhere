@@ -6,6 +6,22 @@
 	<link rel="icon" href="image/logo.jpg" type="image/jpg">
 </head>
 <body background="image/background.jpg">
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          <script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 	<div id = "outer">
 		<div style="height: 8%; width: 70%; float: left;">
 			<a href="index.html">
