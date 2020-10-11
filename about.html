@@ -4,77 +4,98 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Filmwhere</title>
 	<link rel="icon" href="image/logo.jpg" type="image/jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,900;1,100&family=Fredoka+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 <body background="image/background.jpg">
+   <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
 	<div id = "outer">
-		<div style="height: 8%; width: 70%; float: left;">
+		<div class="logo-div">
 			<a href="index.html">
-				<h1 style="color: white; font-family: cursive; ">
-				<img style="border-radius: 5px;" src="image/logo.jpg" height="50px" width="50px" style="float: left; margin-right: 10px; margin-top: 20px; margin-left: 20px">
-				Filmwhere</h1>
+					<img class="logo-img" src="image/logo.jpg">
+					<h1 class="logo-name">Filmwhere</h1>
 			</a>
 		</div>
-		<div style="height: 8%; width: 20%; float: right;">
+		<div class="login-signup-div">
 			<h2 style="color: white; font-family: cursive; "><a href="login.html" style="color: white;">Login</a> | <a href="sign.html"style="color: white;">signup</a></h2>
 		</div>
+
 		<div id="menu">
 			<h3> 
 				<div id="index"><a href="index.html"style="color: white;"><center>Home</center>  </a></div>
 				<div id="index"><a href="holly.html"style="color: white;"><center>Hollywood</center>  </a></div>
 				<div id="index"><a href="boll.html"style="color: white;"><center>Bollywood</center>  </a></div>
 				<div id="index"><a href="toll.html"style="color: white;"><center>Tollywood</center>  </a></div>
-				<div id="index"><a href="about.html"style="color: white;"><center>About Us</center>  </a></div>
+				<div id="index" class="glow"><a href="about.html"style="color: white;"><center>About Us</center>  </a></div>
 			</h3>
 		</div>
-		<div style="height:70%; width: 100%; float: left;">
-			<h2 style="color: white; font-family: cursive; ">About Us</h2>
-			<div>
-				<h3>
-					<p>
-					My name is Abhishek Kumar Dubey. I am a computer sceince engineer. I am very found of movies specially the ones which my friend Umang suggests. So I wanted to design a plateform that can provide us direct links to watch and download movies. We also provide download links of songs.
-					</p>
-					<p>
-					This website is designed to all movies lover who want to enjoy all cool movies in available highest quality. 
-					We update our content and links every week. After each week new movies and links will be updated.
-					I specially thanks Mr. Basukinath and Manu Sharma for their immence effort through out all the stages of developement of software.
-					</p>
-				</h3> 
-				<h2 style="color: white; font-family: cursive;">
-					About Website
-				</h2>
-				<h3>
-					<p>
-						The basic functions that our website provide is to give download links and watch online link of one of the best movies of different movie industry.We have movies of these indusrties-
-					</p>
-					<li>
-						Hollywood
-					</li>
-					<li>
-						Bollywood
-					</li>
-					<li>
-						Tollywood
-					</li>
-					<p>
-						If there is any suggetion, about movie content, that you want to mention then please let us know in the Feedback section.
-					</p>
-				</h3>
 
+		<div id="menu" style="margin-top: 10px">
+			<div class="search-bar-div">
+				<input class="search-bar" type="text" placeholder="search here">
+				<button class="search-btn" type="button">Search</button>
 			</div>
-
 		</div>
+
 		
+		<div style="height:70%; width: 100%; float: left; padding: 20px;">
+			<fieldset>
+				<legend><div class="about-us-heading">About us</div></legend>
+					<div class="content-padding">
+						<p class="about-us-content">
+						My name is Abhishek Kumar Dubey. I am a computer science engineer. I am very found of movies specially the ones which my friend Umang suggests. So I wanted to design a plateform that can provide us direct links to watch and download movies. We also provide download links of songs.
+						</p>
+						<p class="about-us-content">
+						This website is designed to all movies lover who want to enjoy all cool movies in available highest quality. 
+						We update our content and links every week. After each week new movies and links will be updated.
+						I specially thanks Mr. Basukinath and Manu Sharma for their immence effort through out all the stages of developement of software.
+						</p>
+					<div class="about-us-title">About Website</div>
+						<p class="about-us-content">
+							The basic functions that our website provide is to give download links and watch online link of one of the best movies of different movie industry.We have movies of these indusrties-
+						</p>
+						<li class="about-us-content">Hollywood</li>
+						<li class="about-us-content">Bollywood</li>
+						<li class="about-us-content">Tollywood</li>
+						<p class="about-us-content">
+							If there is any suggetion, about movie content, that you want to mention then please let us know in the Feedback section.
+						</p>
+				</div>
+
+			</fieldset>
+		</div>
+
 		<div id="foot">
-			<h4 style="color: white;"> 
-				<div id="index"><a href=""style="color: white;"><center>FAQs</center>  </a></div>
-				<div id="index"><a href=""style="color: white;"><center>contact us</center>  </a></div>
-				<div id="index"><a href=""style="color: white;"><center> copyrights</center>  </a></div>
-				<div id="index"><a href=""style="color: white;"><center>Help</center>  </a></div>
-				<div id="index"><a href=""style="color: white;"><center>Feedback</center>  </a></div>
-			</h4>
+			<a href="#" class="footer-content">FAQs</a>
+			<a href="#" class="footer-content">contact us</a>				
+			<a href="#" class="footer-content"> copyrights</a>
+			<a href="#" class="footer-content"r>Help</a>
+			<a href="#" class="footer-content">Feedback</a>
 		</div>
 
 	</div>
 
 </body>
+<script>
+	var mybutton = document.getElementById("myBtn");
+
+	window.onscroll = function() {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
+	
 </html>
+
+
